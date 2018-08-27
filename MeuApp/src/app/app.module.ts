@@ -7,18 +7,22 @@ import { AppComponent } from './app.component';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { HomeComponent } from './home/home.component';
 import { HomeModule } from './home/home.module';
+import { LoginComponent } from './login/login.component';
+import { LoginModule } from './login/login.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsuarioComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     routing,
     UsuarioModule,
-    HomeModule
+    HomeModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]
