@@ -5,16 +5,20 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { UsuarioComponent } from './usuario/usuario.component';
+import { HomeComponent } from './home/home.component';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UsuarioComponent
+    UsuarioComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     routing,
-    UsuarioModule
+    UsuarioModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
