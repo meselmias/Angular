@@ -1,2 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
+.margem-superior {
+    margin-top: 50px;
+}
+
+.margem-superior-pequena {
+    margin-top: 25px;
+}
+

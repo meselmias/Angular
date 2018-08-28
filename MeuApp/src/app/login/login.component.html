@@ -1,23 +1,40 @@
-<div class="container login">
-  <form>
+<div class="container margem-superior">
+  <div class="alert alert-danger" *ngIf="flagValidacao">
+    <p>Dados Inválidos</p>
+  </div>
+  <div class="alert alert-success" *ngIf="flagValidacaoSuccess">
+      <p>Bem vindo {{ login.nome }}</p>
+    </div>
+  <form #loginForm="ngForm" (ngSubmit)="onLogin(login)">
     <div class="row">
+      <div class="col-sm-4"></div>
       <div class="col-sm-4">
         <div class="form-group">
-          <label for="exampleInputEmail1">Email</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          <label for="Email">Email</label>
+          <input type="email" email class="form-control" placeholder="email@email.com" name="email" 
+          [(ngModel)]="login.email" 
+          required
+          maxlength="20"
+          >          
         </div>
       </div>
+      <div class="col-sm-4"></div>
     </div>
     <div class="row">
+      <div class="col-sm-4"></div>
       <div class="col-sm-4">
         <div class="form-group">
-          <label for="exampleInputPassword1">Senha</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <label for="senha">Senha</label>
+          <input type="password" class="form-control" placeholder="Password" name="senha" 
+          [(ngModel)]="login.senha" 
+          required 
+          minlength="6">
         </div>
       </div>
+      <div class="col-sm-4"></div>
     </div>
     <div class="row">
+      <div class="col-sm-4"></div>
       <div class="col-sm-4">
         <div class="form-group form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -26,14 +43,17 @@
       </div>
     </div>
     <div class="row">
+      <div class="col-sm-4"></div>
       <div class="col-sm-4">
-        <button type="submit" class="btn btn-primary">Login</button>
+        <button type="submit" class="btn btn-primary btn-block" [disabled]="!loginForm.valid">Login</button>
       </div>
     </div>
 
-
-
-
+    <div class="row margem-superior-pequena">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+          <button type="button" class="btn btn-info btn-block">Cadastre-se</button>
+        </div>
+      </div>
   </form>
-
 </div>

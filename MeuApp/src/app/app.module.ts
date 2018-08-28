@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { routing } from './app.rounting';
 import { UsuarioModule } from './usuario/usuario.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -9,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { HomeModule } from './home/home.module';
 import { LoginComponent } from './login/login.component';
 import { LoginModule } from './login/login.module';
+import { NovoUsuarioComponent } from './usuario/novo-usuario/novo-usuario.component';
 
 @NgModule({
   declarations: [
@@ -16,10 +18,12 @@ import { LoginModule } from './login/login.module';
     UsuarioComponent,
     HomeComponent,
     LoginComponent
+    
   ],
   imports: [
     BrowserModule,
     routing,
+    FormsModule,
     UsuarioModule,
     HomeModule,
     LoginModule
