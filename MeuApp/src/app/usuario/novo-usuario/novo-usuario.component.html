@@ -1,0 +1,51 @@
+<div class="container margem-superior">
+  <form #formUsuario="ngForm" (ngSubmit)="cadastrar(usuario)">
+    <!-- campo nome -->
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label for="Nome">Nome</label>
+          <input type="text" class="form-control" name="nome" placeholder="Digite seu nome"
+          [(ngModel)]="usuario.nome" required minlength="3" maxlength="30">
+        </div>
+      </div>
+    </div>
+    <!-- campo e-mail -->
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label for="Email">Email</label>
+          <input type="email" class="form-control" name="email" placeholder="email@email.com"
+          [(ngModel)]="usuario.email" required maxlength="30" email>
+        </div>
+      </div>
+    </div>
+    <!-- campo Senha -->
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label for="Senha">Senha</label>
+          <input type="password" class="form-control" name="senha" placeholder="Senha"
+          [(ngModel)]="usuario.senha" required minlength="6" maxlength="20">
+        </div>
+
+      </div>
+    </div>
+    <!-- campo Confirma Senha -->
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label for="ConfirmaSenha">Confirme a Senha</label>
+          <input type="password" class="form-control" name="confirmaSenha" placeholder="Confirmar senha"
+          [(ngModel)]="usuario.confirmaSenha" required minlength="6"
+            maxlength="20">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <input type="submit" value="Cadastrar" class="btn btn-success" [disabled]="!formUsuario.valid">
+      </div>
+    </div>
+  </form>
+</div>

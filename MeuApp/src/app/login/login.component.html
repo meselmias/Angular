@@ -3,19 +3,16 @@
     <p>Dados Inválidos</p>
   </div>
   <div class="alert alert-success" *ngIf="flagValidacaoSuccess">
-      <p>Bem vindo {{ login.nome }}</p>
-    </div>
+    <p>Bem vindo {{ login.nome }}</p>
+  </div>
   <form #loginForm="ngForm" (ngSubmit)="onLogin(login)">
     <div class="row">
       <div class="col-sm-4"></div>
       <div class="col-sm-4">
         <div class="form-group">
           <label for="Email">Email</label>
-          <input type="email" email class="form-control" placeholder="email@email.com" name="email" 
-          [(ngModel)]="login.email" 
-          required
-          maxlength="20"
-          >          
+          <input type="email" email class="form-control" placeholder="email@email.com" name="email" [(ngModel)]="login.email" required
+            maxlength="20">
         </div>
       </div>
       <div class="col-sm-4"></div>
@@ -25,10 +22,7 @@
       <div class="col-sm-4">
         <div class="form-group">
           <label for="senha">Senha</label>
-          <input type="password" class="form-control" placeholder="Password" name="senha" 
-          [(ngModel)]="login.senha" 
-          required 
-          minlength="6">
+          <input type="password" class="form-control" placeholder="Password" name="senha" [(ngModel)]="login.senha" required minlength="6">
         </div>
       </div>
       <div class="col-sm-4"></div>
@@ -50,10 +44,10 @@
     </div>
 
     <div class="row margem-superior-pequena">
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4">
-          <button type="button" class="btn btn-info btn-block">Cadastre-se</button>
-        </div>
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+        <button type="button" class="btn btn-info btn-block" routerLink="/usuario/cadastro">Cadastre-se</button>
       </div>
+    </div>
   </form>
 </div>
