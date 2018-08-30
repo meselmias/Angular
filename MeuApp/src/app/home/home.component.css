@@ -1,0 +1,17 @@
+.navbar-dark {
+    background-color: #918da9;
+    border-color: #918da9;
+    border-radius: 0px;
+  }
+
+  .navbar-dark .navbar-brand {
+    color:  white;
+  }
+  .navbar-dark .navbar-brand:hover,
+  .navbar-dark .navbar-brand:focus {
+    color: white;
+    background-color: transparent;
+  }
+  .navbar-dark .navbar-text {
+    color: white;
+  }
