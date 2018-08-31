@@ -17,76 +17,65 @@
       "username": "acarol",
       "email": "ana.caroline@email.com",
       "senha": "123123"
-    },
-    {
-      "id": 4,
-      "username": "lsouza",
-      "email": "leo@email.com",
-      "senha": "123456"
-    },
-    {
-      "nome": "dafdsaf",
-      "email": "teste@teste.com",
-      "senha": "123456",
-      "ConfirmaSenha": "",
-      "confirmaSenha": "123456",
-      "id": 5
-    },
-    {
-      "nome": "antonio",
-      "email": "antonio@teste.com",
-      "senha": "123456",
-      "ConfirmaSenha": "",
-      "confirmaSenha": "123456",
-      "id": 6
-    },
-    {
-      "nome": "maria",
-      "email": "maria@teste.com",
-      "senha": "123456",
-      "ConfirmaSenha": "",
-      "confirmaSenha": "123456",
-      "id": 7
-    },
-    {
-      "nome": "José",
-      "email": "jose@email.com",
-      "senha": "123456",
-      "ConfirmaSenha": "",
-      "confirmaSenha": "123456",
-      "id": 8
-    },
-    {
-      "nome": "Caroline",
-      "email": "carol@mail.com",
-      "senha": "123456",
-      "ConfirmaSenha": "",
-      "confirmaSenha": "123456",
-      "id": 9
-    },
-    {
-      "nome": "Caroline",
-      "email": "carol@mail.com",
-      "senha": "123456",
-      "ConfirmaSenha": "",
-      "confirmaSenha": "123456",
-      "id": 10
-    },
-    {
-      "nome": "Caroline",
-      "email": "carol@mail.com",
-      "senha": "123456",
-      "ConfirmaSenha": "",
-      "confirmaSenha": "123456",
-      "id": 11
-    },
-    {
-      "nome": "Caroline",
-      "email": "carol@mail.com",
-      "senha": "123456",
-      "ConfirmaSenha": "",
-      "confirmaSenha": "123456",
-      "id": 12
     }
+  ],
+  "cliente": [
+    {
+      "id": 1,
+      "nome": "Johnson",
+      "cnpj": "16.344.308/0001-94"
+    },
+    {
+      "id": 2,
+      "nome": "Kimberly",
+      "cnpj": "16.444.946/0001-87"
+    },
+    {
+      "id": 3,
+      "nome": "Itaú",
+      "cnpj": "16.444.946/0001-87"
+    }
+  ],
+  "produto": [
+    {
+      "id": 1,
+      "nome": "notebook",
+      "marca": [
+        {
+          "id": 1,
+          "nome": "lenovo"
+        },
+        {
+          "id": 2,
+          "nome": "Dell"
+        },
+        {
+          "id": 3,
+          "nome": "Samsung"
+        }
+      ],
+      "preço":"2000",
+      "descricao":"notebook dell      skahdfahjkdfjajlkhfdjkhajkdhlfjkhjkldfhjklahdjkhjkafhjkfdhajkhdfjkhajkfhjksahfdkhakjhfkhsafhsjahjkfhajkhfdjkhajkfhjkahfjkhassjkfhjsahfjkhajkhfsdjkahjkfhjkfsah"
+    },{
+      "id": 2,
+      "nome": "Teclado",
+      "marca": [
+        {
+          "id": 1,
+          "nome": "Microsoft"
+        },
+        {
+          "id": 2,
+          "nome": "logiTech"
+        },
+        {
+          "id": 3,
+          "nome": "xiaomi"
+        }
+      ],
+      "preço":"50",
+      "descricao":"Mouse sem fio dsfklçadhfjkhadfjahfdhadklkkadhkfkjljhajkfhakjdfhjkshakjlfhajkdhfjkashdfkljhajkdfhkljahkfjhaskjdf"
+    }
+   
   ]
 }

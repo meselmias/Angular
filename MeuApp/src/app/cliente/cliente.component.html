@@ -1,0 +1,13 @@
+<div class="container margem-superior">
+  <div class="row">
+    <div class="col-sm-3">
+      <button class="btn btn-block btn-success">Novo Cliente</button>
+    </div>
+  </div>
+  <div class="panel panel-primary">
+    <div class="panel-heading">Clientes</div>    
+    <ul class="list-group" *ngFor="let c of clientes">
+      <li class="list-group-item">Nome: {{c.nome}} - CNPJ: {{c.cnpj}}</li>    
+    </ul>
+  </div>
+</div>

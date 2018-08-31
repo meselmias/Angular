@@ -1,13 +1,17 @@
-http://localhost:3000/usuario
+# http://localhost:3000/usuario
 
 
-###
-POST http://localhost:3000/usuario HTTP/1.1
-content-type: application/json
+# ###
+# POST http://localhost:3000/usuario HTTP/1.1
+# content-type: application/json
 
-{
-   "id": 4,
-    "username": "lsouza",
-    "email": "leo@email.com",
-    "senha": "123456"
-}
+# {
+#    "id": 4,
+#     "username": "lsouza",
+#     "email": "leo@email.com",
+#     "senha": "123456"
+# }
+
+# ###
+
+# http://localhost:3000/clientes
