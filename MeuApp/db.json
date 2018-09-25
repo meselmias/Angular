@@ -1,81 +1,28 @@
 {
-  "usuario": [
-    {
-      "id": 1,
-      "username": "mlima",
-      "email": "meselmias@email.com",
-      "senha": "123456"
-    },
-    {
-      "id": 2,
-      "username": "jalves",
-      "email": "jose.alvez@email.com",
-      "senha": "654321"
-    },
-    {
-      "id": 3,
-      "username": "acarol",
-      "email": "ana.caroline@email.com",
-      "senha": "123123"
-    }
-  ],
-  "cliente": [
-    {
-      "id": 1,
-      "nome": "Johnson",
-      "cnpj": "16.344.308/0001-94"
-    },
-    {
-      "id": 2,
-      "nome": "Kimberly",
-      "cnpj": "16.444.946/0001-87"
-    },
-    {
-      "id": 3,
-      "nome": "Itaú",
-      "cnpj": "16.444.946/0001-87"
-    }
-  ],
-  "produto": [
-    {
+  "produtos": [
+     {
       "id": 1,
       "nome": "notebook",
-      "marca": [
-        {
-          "id": 1,
-          "nome": "lenovo"
-        },
-        {
-          "id": 2,
-          "nome": "Dell"
-        },
-        {
-          "id": 3,
-          "nome": "Samsung"
-        }
-      ],
-      "preço":"2000",
-      "descricao":"notebook dell      skahdfahjkdfjajlkhfdjkhajkdhlfjkhjkldfhjklahdjkhjkafhjkfdhajkhdfjkhajkfhjksahfdkhakjhfkhsafhsjahjkfhajkhfdjkhajkfhjkahfjkhassjkfhjsahfjkhajkhfsdjkahjkfhjkfsah"
-    },{
+      "preco":"2000",
+      "descricao":"notebook dell ahjkfhajkhfdjkhajkfhjkahfjkhassjkfhjsahfjkhajkhfsdjkahjkfhjkfsah"
+    },
+    {
       "id": 2,
-      "nome": "Teclado",
-      "marca": [
-        {
-          "id": 1,
-          "nome": "Microsoft"
-        },
-        {
-          "id": 2,
-          "nome": "logiTech"
-        },
-        {
-          "id": 3,
-          "nome": "xiaomi"
-        }
-      ],
-      "preço":"50",
-      "descricao":"Mouse sem fio dsfklçadhfjkhadfjahfdhadklkkadhkfkjljhajkfhakjdfhjkshakjlfhajkdhfjkashdfkljhajkdfhkljahkfjhaskjdf"
+      "nome": "Celular",
+      "preco":"4000",
+      "descricao":"ahjkfhajkhfdjkhajkfhjkahfjkhassjkfhjsahfjkhajkhfsdjkahjkfhjkfsah"
+    },
+    {
+      "id": 3,
+      "nome": "Fone de Ouvido",
+      "preco":"5000",
+      "descricao":" ahjkfhajkhfdjkhajkfhjkahfjkhassjkfhjsahfjkhajkhfsdjkahjkfhjkfsah"
+    },
+    {
+      "id": 4,
+      "nome": "Carregador",
+      "preco":"3000",
+      "descricao":"ahjkfhajkhfdjkhajkfhjkahfjkhassjkfhjsahfjkhajkhfsdjkahjkfhjkfsah"
     }
-   
   ]
 }

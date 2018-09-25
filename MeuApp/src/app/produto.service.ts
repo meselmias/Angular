@@ -11,6 +11,11 @@ export class ProdutoService {
 
 
   getProdutos(){
-    return this.http.get("http://localhost:3000/produto")
+    return this.http.get("http://localhost:3000/produtos")
+  }
+
+  getProdutosDetalhes(id){
+    console.log(id);
+    return this.http.get('http://localhost:3000/produtos/' + id)    
   }
 }

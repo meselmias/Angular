@@ -1,6 +1,6 @@
 .main {
     display: flex;
-    background-color: #ecf0f5;
+    /* background-color: #ecf0f5; */
     min-height: calc(100vh - 52px);
     overflow: hidden;
 }

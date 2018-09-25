@@ -16,7 +16,8 @@ export class MenuLateralComponent implements OnInit {
 
   toggle(){
     this.menuAberto = !this.menuAberto;
+    
   }
-
+ 
 
 }
