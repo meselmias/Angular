@@ -15,3 +15,5 @@
 # ###
 
 # http://localhost:3000/clientes
+
+POST http://localhost:3000/cliente

@@ -1,13 +1,28 @@
 <div class="container margem-superior">
   <div class="row">
     <div class="col-sm-3">
-      <button class="btn btn-block btn-success">Novo Cliente</button>
+      <button class="btn btn-block btn-success" [routerLink]="['cadastro']">Novo Cliente</button>
     </div>
   </div>
-  <div class="panel panel-primary">
-    <div class="panel-heading">Clientes</div>    
-    <ul class="list-group" *ngFor="let c of clientes">
-      <li class="list-group-item">Nome: {{c.nome}} - CNPJ: {{c.cnpj}}</li>    
-    </ul>
-  </div>
+  <br>
+  <table class="table-striped table-bordered table-hover">
+    <tr>
+      <th>Nome</th>
+      <th>CNPJ</th>
+      <th>Email</th>
+      <th>Endereço</th>
+      <th></th>
+    </tr>
+    <tr *ngFor="let c of clientes">
+      <td>{{ c.nome }}</td>
+      <td>{{ c.cnpj }}</td>
+      <td>{{c.email}}</td>
+      <td>{{c.endereco}}</td>
+      <td>
+        <button class="btn btn-warning" (click)="editar()">Editar</button> |
+        <button class="btn btn-primary" (click)="detalhar()">Detalhes</button>|
+        <button class="btn btn-danger"  (click)="excluir()">Excluir</button>
+      </td>
+    </tr>
+  </table>
 </div>

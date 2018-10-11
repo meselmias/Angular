@@ -1,3 +1,44 @@
-<p>
-  cadastro-cliente works!
-</p>
+<div class="container">
+  <form #clienteForm="ngForm" (ngSubmit)="onCadastro(cliente)">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="">Nome:</label>
+          <input type="text" name="nome" [(ngModel)]="cliente.nome" required class="form-control" minlength="3" maxlength="40">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="">CNPJ:</label>
+          <input type="text" name="cnpj" [(ngModel)]="cliente.cnpj" required class="form-control" minlength="14" maxlength="14">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="">Email:</label>
+          <input type="email" name="email" [(ngModel)]="cliente.email"  required class="form-control" maxlength="30">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="">Endereço:</label>
+          <input type="text" name="endereco" [(ngModel)]="cliente.endereco" required class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="row">
+        <div class="col-md-2">
+          <button type="submit" class="btn btn-block btn-outline-primary" [disabled]="!clienteForm.valid">Salvar</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

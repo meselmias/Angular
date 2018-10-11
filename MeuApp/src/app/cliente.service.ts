@@ -9,6 +9,11 @@ export class ClienteService {
   constructor(private http:HttpClient) { }
 
   getClientes(){
-    return this.http.get("http://localhost:3000/cliente")
+    return this.http.get("http://localhost:3000/clientes")
+  }
+
+
+  postCliente(object){
+    return this.http.post("http://localhost:3000/clientes", object)
   }
 }
