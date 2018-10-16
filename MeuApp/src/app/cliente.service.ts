@@ -16,4 +16,8 @@ export class ClienteService {
   postCliente(object){
     return this.http.post("http://localhost:3000/clientes", object)
   }
+
+  delete(obj){
+    return this.http.delete("http://localhost:3000/clientes/" + obj.id)
+  }
 }

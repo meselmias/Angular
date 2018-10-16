@@ -1,6 +1,7 @@
 import { Router, ActivatedRoute } from '@angular/router';
 import { ClienteService } from './../../cliente.service';
 import { Component, OnInit } from '@angular/core';
+import { NULL_EXPR } from '@angular/compiler/src/output/output_ast';
 
 @Component({
   selector: 'app-cadastro-cliente',
@@ -15,16 +16,22 @@ export class CadastroClienteComponent implements OnInit {
   };
   response;
 
-  constructor(private Service: ClienteService,private router: Router, private route: ActivatedRoute) { }
+  constructor(private Service: ClienteService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
   }
 
   onCadastro(object) {
-    this.Service.postCliente(object).subscribe(data => this.response = data);
-
-    this.router.navigate(['cliente']);
+    this.Service.postCliente(object).subscribe(
+      data => this.response = data,
+      error => alert(error)
+    )
+    if (this.response != null) {
+      this.router.navigate(['cliente']);
+    }
   }
-  }
 
+  
 }
+
+
